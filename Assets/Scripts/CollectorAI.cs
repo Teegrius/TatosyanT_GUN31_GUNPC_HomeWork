@@ -8,21 +8,43 @@ public class CollectorAI : MonoBehaviour
     public Text scoreText;
 
     private NavMeshAgent agent;
+    private Animator animator;
     private Transform currentTarget;
     private int score = 0;
     private float idleTimer = 0f;
+
     private enum State { Idle, Search, Collect }
     private State currentState = State.Idle;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.speed = 3.5f;
+        animator = GetComponent<Animator>();
+
+        agent.speed = 5.5f;
+        agent.angularSpeed = 720f;
+
+        // Важные параметры для Starter Assets
+        if (animator != null)
+        {
+            animator.SetBool("Grounded", true);
+            animator.SetFloat("Speed", 0f);
+            animator.SetFloat("MotionSpeed", 0f);
+        }
+
         SetRandomDestination();
     }
 
     void Update()
     {
+        // === КРИТИЧНО ДЛЯ АНИМАЦИИ ===
+        if (animator != null)
+        {
+            float currentSpeed = agent.velocity.magnitude;
+            animator.SetFloat("Speed", currentSpeed);
+            animator.SetFloat("MotionSpeed", currentSpeed > 0.1f ? 1.0f : 0f);
+        }
+
         switch (currentState)
         {
             case State.Idle:
@@ -84,14 +106,6 @@ public class CollectorAI : MonoBehaviour
         Vector3 randomPos = Random.insideUnitSphere * 20f + transform.position;
         NavMeshHit hit;
         if (NavMesh.SamplePosition(randomPos, out hit, 30f, NavMesh.AllAreas))
-        {
             agent.SetDestination(hit.position);
-        }
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, searchRadius);
     }
 }
