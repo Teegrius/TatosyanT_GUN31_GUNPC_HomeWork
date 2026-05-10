@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
+<<<<<<< HEAD
   productGUID: 6f136ee03200b44478d5aebe5e812de2
+=======
+  productGUID: 77bfa3db86a66274590e2c043d166fcd
+>>>>>>> 1bed9f4b0766d062b7f7c7ab8ba54303ac73f69c
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +17,11 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
+<<<<<<< HEAD
   productName: DOTween
+=======
+  productName: StateMachine
+>>>>>>> 1bed9f4b0766d062b7f7c7ab8ba54303ac73f69c
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -843,14 +851,22 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
+<<<<<<< HEAD
   metroPackageName: DOTween
+=======
+  metroPackageName: StateMachine
+>>>>>>> 1bed9f4b0766d062b7f7c7ab8ba54303ac73f69c
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
+<<<<<<< HEAD
   metroApplicationDescription: DOTween
+=======
+  metroApplicationDescription: StateMachine
+>>>>>>> 1bed9f4b0766d062b7f7c7ab8ba54303ac73f69c
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -920,10 +936,17 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
+<<<<<<< HEAD
   cloudProjectId: 2b6e54a3-4f46-463a-b500-4726a031ab2c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: DOTween
+=======
+  cloudProjectId: f2da2d95-3ad1-47e3-aa3d-ad5b5d1ed0b7
+  framebufferDepthMemorylessMode: 0
+  qualitySettingsNames: []
+  projectName: StateMachine
+>>>>>>> 1bed9f4b0766d062b7f7c7ab8ba54303ac73f69c
   organizationId: asaprockyny23
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

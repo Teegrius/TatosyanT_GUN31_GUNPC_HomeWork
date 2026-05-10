@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+cat > .gitignore << 'EOF'
+>>>>>>> 1bed9f4b0766d062b7f7c7ab8ba54303ac73f69c
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -6,3 +10,7 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 *.log
+<<<<<<< HEAD
+=======
+EOF
+>>>>>>> 1bed9f4b0766d062b7f7c7ab8ba54303ac73f69c
