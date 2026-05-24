@@ -51,9 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-<<<<<<< HEAD
+    "DOTween.sln=======dotnet.defaultSolution": "StateMachine.sln>>>>>>>1bed9f4b0766d062b7f7c7ab8ba54303ac73f69c",
     "dotnet.defaultSolution": "DOTween.sln"
-=======
-    "dotnet.defaultSolution": "StateMachine.sln"
->>>>>>> 1bed9f4b0766d062b7f7c7ab8ba54303ac73f69c
 }
